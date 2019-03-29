@@ -5,9 +5,6 @@ import java.util.Map;
 
 public class Grouping {
 
-    private Grouping() {
-    }
-
     public static Map<String, List<Person>> groupByNationality(List<Person> people) {
         Map<String, List<Person>> map = new HashMap<>();
         for (Person person : people) {

@@ -8,10 +8,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FlatCollectionTest {
 
     @Test
-    public void transformShouldFlattenCollection() {
+    public void ShouldFlattenCollection() {
         List<List<String>> collection = asList(asList("Viktor", "Farcic"), asList("John", "Doe", "Third"));
         List<String> expected = asList("Viktor", "Farcic", "John", "Doe", "Third");
-        assertThat(FlatCollection.transform(collection)).hasSameElementsAs(expected);
+        assertThat(FlatCollection.flatCollection(collection)).hasSameElementsAs(expected);
     }
 
 }

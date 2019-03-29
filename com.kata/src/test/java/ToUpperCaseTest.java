@@ -11,7 +11,7 @@ public class ToUpperCaseTest {
     public void transformShouldConvertCollectionElementsToUpperCase() {
         List<String> collection = asList("My", "name", "is", "John", "Doe");
         List<String> expected = asList("MY", "NAME", "IS", "JOHN", "DOE");
-        assertThat(ToUpperCase.transform(collection)).hasSameElementsAs(expected);
+        assertThat(ToUpperCase.toUppercase(collection)).hasSameElementsAs(expected);
     }
 
 }

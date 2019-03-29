@@ -11,7 +11,7 @@ Sum all elements of a collection
 public class SumTest {
 
     @Test
-    public void calculateShouldReturnSumOfAllIntegersInCollection() {
+    public void shouldReturnSumOfAllIntegersInCollection() {
         List<Integer> numbers = asList(1, 2, 3, 4, 5);
         assertThat(Sum.calculate(numbers)).isEqualTo(1 + 2 + 3 + 4 + 5);
     }

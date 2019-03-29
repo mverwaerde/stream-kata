@@ -4,10 +4,7 @@ import static java.util.stream.Collectors.joining;
 
 public class Joining {
 
-    private Joining() {
-    }
-
-    public static String namesToString(List<Person> people) {
+    public static String transformNamesWithCommaSeparator(List<Person> people) {
         String label = "Names: ";
         StringBuilder sb = new StringBuilder(label);
         for (Person person : people) {

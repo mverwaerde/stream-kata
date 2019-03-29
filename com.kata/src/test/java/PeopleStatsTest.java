@@ -13,31 +13,31 @@ public class PeopleStatsTest {
     private List<Person> collection = asList(sara, eva, viktor);
 
     @Test
-    public void getStatsShouldReturnAverageAge() {
+    public void shouldReturnAverageAge() {
         assertThat(PeopleStats.getStats(collection).getAverage())
                 .isEqualTo((double)(4 + 40 + 42) / 3);
     }
 
     @Test
-    public void getStatsShouldReturnNumberOfPeople() {
+    public void shouldReturnNumberOfPeople() {
         assertThat(PeopleStats.getStats(collection).getCount())
                 .isEqualTo(3);
     }
 
     @Test
-    public void getStatsShouldReturnMaximumAge() {
+    public void shouldReturnMaximumAge() {
         assertThat(PeopleStats.getStats(collection).getMax())
                 .isEqualTo(42);
     }
 
     @Test
-    public void getStatsShouldReturnMinimumAge() {
+    public void shouldReturnMinimumAge() {
         assertThat(PeopleStats.getStats(collection).getMin())
                 .isEqualTo(4);
     }
 
     @Test
-    public void getStatsShouldReturnSumOfAllAges() {
+    public void shouldReturnSumOfAllAges() {
         assertThat(PeopleStats.getStats(collection).getSum())
                 .isEqualTo(40 + 42 + 4);
     }

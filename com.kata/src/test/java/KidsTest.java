@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class KidsTest {
 
     @Test
-    public void getKidNameShouldReturnNamesOfYoungerThan18() {
+    public void shouldReturnNamesOfYoungerThan18() {
         Person sara = new Person("Sara", 4);
         Person viktor = new Person("Viktor", 40);
         Person eva = new Person("Eva", 42);

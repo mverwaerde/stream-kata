@@ -2,9 +2,6 @@ import java.util.*;
 
 public class Partitioning {
 
-    private Partitioning() {
-    }
-
     public static Map<Boolean, List<Person>> partitionAdults(List<Person> people) {
         Map<Boolean, List<Person>> map = new HashMap<>();
         map.put(true, new ArrayList<>());

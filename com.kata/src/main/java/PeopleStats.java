@@ -2,9 +2,6 @@ import java.util.List;
 
 public class PeopleStats {
 
-    private PeopleStats() {
-    }
-
     public static Stats getStats(List<Person> people) {
         long sum = 0;
         int min = people.get(0).getAge();

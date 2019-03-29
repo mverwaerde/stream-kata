@@ -8,10 +8,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FilterCollectionTest {
 
     @Test
-    public void transformKeepStringsShorterThant4Characters() {
+    public void shouldKeepStringsShorterThan4Characters() {
         List<String> collection = asList("My", "name", "is", "John", "Doe");
         List<String> expected = asList("My", "is", "Doe");
-        assertThat(FilterCollection.transform(collection)).hasSameElementsAs(expected);
+        assertThat(FilterCollection.getStringsShorterThanFourCharacters(collection)).hasSameElementsAs(expected);
     }
 
 }

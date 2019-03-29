@@ -8,12 +8,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class JoiningTest {
 
     @Test
-    public void toStringShouldReturnPeopleNamesSeparatedByComma() {
+    public void shouldReturnPeopleNamesSeparatedByComma() {
         Person sara = new Person("Sara", 4);
         Person viktor = new Person("Viktor", 40);
         Person eva = new Person("Eva", 42);
         List<Person> collection = asList(sara, viktor, eva);
-        assertThat(Joining.namesToString(collection))
+        assertThat(Joining.transformNamesWithCommaSeparator(collection))
                 .isEqualTo("Names: Sara, Viktor, Eva.");
     }
 
